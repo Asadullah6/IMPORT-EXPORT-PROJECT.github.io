@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - GMB SONS PVT LTD</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.contact-section {
+    padding: 80px 0;
+    background: var(--light-bg);
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+}
+.contact-info-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+.contact-info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.contact-icon {
+    font-size: 24px;
+    min-width: 30px;
+}
+.contact-form-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+ <header class="main-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <img src="2.png" alt="GMB Sons Logo" class="logo-image">
+                </div>
+                <div class="logo-text">
+                    <span class="company-name">GMB SONS</span>
+                    <span class="company-tagline">IMPORT EXPORT & TRADING</span>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="inner-page-hero">
+    <div class="decorative-circles">
+        <div class="decorative-circle decorative-circle-1"></div>
+        <div class="decorative-circle decorative-circle-2"></div>
+        <div class="decorative-circle decorative-circle-3"></div>
+        <div class="decorative-circle decorative-circle-4"></div>
+    </div>
+    <div class="container">
+        <div class="inner-page-hero-content">
+            <h1>Contact Us</h1>
+            <p>Have questions? We're here to help. Contact us for all your import, export, and trading needs.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Address</strong><br>
+                            F,4/2, First Floor, EOBI House, Awami Markaz, Shahra-e-Faisal,Karachi, Pakistan
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +92-336-7834440
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            channagulmunir62@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Business Hours</strong><br>
+                            Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                            Sunday: Closed
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <h3>Why Choose GMB SONS?</h3>
+                    <ul class="why-choose-list">
+                        <li class="why-choose-item">✓ 15+ Years of Experience</li>
+                        <li class="why-choose-item">✓ Quality Assured Products</li>
+                        <li class="why-choose-item">✓ Competitive Pricing</li>
+                        <li class="why-choose-item">✓ Fast & Reliable Service</li>
+                        <li class="why-choose-item last">✓ Global Network</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="contact-form-card">
+                <h3 style="color: var(--primary-color); margin-bottom: 30px;">Send Us a Message</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" placeholder="+92-XXX-XXXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-select">Service Interested In</label>
+                        <select name="service" id="service-select">
+                            <option value="">Select a service</option>
+                            <option value="import">Import Services</option>
+                            <option value="export">Export Services</option>
+                            <option value="trading">Local Trading</option>
+                            <option value="logistics">Logistics</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message *</label>
+                        <textarea name="message" required placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                     <div class="logo-icon">
+                    <img src="2.png" alt="GMB Sons Logo" class="logo-image">
+                </div>
+                     <div class="logo-text">
+                    <span class="company-name" style="color:#c5cae9;">GMB SONS </span>
+                        <span class="company-tagline">IMPORT & EXPORT</span>
+                    </div>
+                </div>
+                <p>Your trusted partner in international trade and local supply solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#import">Import Services</a></li>
+                    <li><a href="services.html#export">Export Services</a></li>
+                    <li><a href="services.html#trading">Local Trading</a></li>
+                    <li><a href="services.html#logistics">Logistics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+               <ul class="contact-info">
+                        <li>📍 KARACHI, Pakistan</li>
+                        <li>📍 F,4/2, First Floor, EOBI House, Awami Markaz, Shahra-e-Faisal,Karachi</li>
+                        <li>📞 +92-336-7834440</li>
+                        <li>✉️ channagulmunir62@gmail.com</li>
+                        <li>⏰ Mon - Sat: 9AM - 6PM</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GMB SONS PVT LTD. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
