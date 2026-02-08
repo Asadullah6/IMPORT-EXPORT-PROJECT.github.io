@@ -585,105 +585,112 @@ body {
     opacity: 0.9;
 }
 /* meet our leadership */
+.leadership-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.section-title {
+    font-size: 36px;
+    color: #0d0f39;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
 
-        .leadership-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
+.leader-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .section-title {
-            font-size: 36px;
-            color: #0d0f39;
-            margin-bottom: 50px;
-            font-weight: bold;
-        }
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
 
-        .leader-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 400px;
-            margin: 0 auto;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.leader-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    display: block;
+    border: 5px solid #f0f0f0;
+}
 
-        .leader-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
+.leader-name {
+    font-size: 24px;
+    color: #0d0f39;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-        .leader-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 25px;
-            display: block;
-            border: 5px solid #f0f0f0;
-        }
+.leader-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
 
-        .leader-name {
-            font-size: 24px;
-            color: #0d0f39;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    animation: fadeInUp 0.6s ease;
+}
 
-        .leader-title {
-            font-size: 16px;
-            color: #333;
-            margin-bottom: 25px;
-            line-height: 1.5;
-        }
+.social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0077b5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            animation: fadeInUp 0.6s ease;
-        }
+.social-icon.linkedin {
+    background: #0077b5;
+    color: white;
+}
 
-        .social-icon {
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0077b5;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
+.social-icon.twitter {
+    background: #000000;
+    color: white;
+}
 
-        .social-icon.linkedin {
-            background: #0077b5;
-            color: white;
-        }
+.social-icon:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-        .social-icon.twitter {
-            background: #000000;
-            color: white;
-        }
+/* FIXED: Added rules for icon font elements */
+.social-icon i {
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
 
-       
-        .social-icon:hover {
-            transform: scale(1.15) rotate(5deg);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);}
+/* Kept existing rules for img/svg (though not used in this case) */
+.social-icon img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
 
-        .social-icon img {
-            width: 25px;
-            height: 25px;
-            filter: brightness(0) invert(1);
-        }
-
-        .social-icon svg {
-            width: 25px;
-            height: 25px;
-            fill: white;
-        }
+.social-icon svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
 
         /* Animations */
         @keyframes fadeInUp {
